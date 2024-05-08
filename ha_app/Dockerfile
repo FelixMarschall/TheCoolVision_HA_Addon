@@ -12,7 +12,6 @@ RUN \
 # So let's set it to our add-on persistent data directory.
 WORKDIR /data
 
-# Copy data for add-on
 COPY thecoolvision/app /data/
 
 RUN \
