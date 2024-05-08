@@ -1,0 +1,3 @@
+[submodule "ha_app/thecoolvision"]
+	path = ha_app/thecoolvision
+	url = https://github.com/FelixMarschall/thecoolvision
