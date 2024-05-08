@@ -8,7 +8,7 @@ RUN \
     python3 \
     py3-pip \
     python3-dev \
-    python-opencv \
+    opencv \
     build-base \
     cmake
 
