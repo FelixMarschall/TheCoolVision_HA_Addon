@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: TheCoolVision - Grocy Tablet Interaction
 version: "0.0.0"
-# slug: example
+slug: thecoolvision
 description: Visualize your Grocy list on a tablet and interact with it.
 url: "https://github.com/FelixMarschall/HA_GrocyTablet"
 arch:
@@ -17,4 +17,4 @@ options:
   message: "Hello world..."
 schema:
   message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/felixmarschall/thecoolvision-{arch}-addon"
