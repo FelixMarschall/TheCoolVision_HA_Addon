@@ -10,7 +10,8 @@ RUN \
     python3-dev \
     opencv \
     build-base \
-    cmake
+    cmake \
+    openssl-dev
 
 # Python 3 HTTP Server serves the current working dir
 # So let's set it to our add-on persistent data directory.
