@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: TheCoolVision - Grocy Tablet Interaction
+url: 'https://github.com/FelixMarschall/HA_GrocyTablet'
+maintainer: Felix Marschall <awesome@example.com>
