@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: TheCoolVision - Grocy Tablet Interaction
-version: "0.0.0"
+version: "0.0.1"
 slug: thecoolvision
 description: Visualize your Grocy list on a tablet and interact with it.
 url: "https://github.com/FelixMarschall/HA_GrocyTablet"
@@ -11,10 +11,16 @@ arch:
   - amd64
   - i386
 init: false
-map:
-  - share:rw
+ports:
+  8050/tcp: 8050
+ports_description:
+  8050/tcp: Web interface
+webui: "[PROTO:option_name]://[HOST]:[PORT:8050]"
 options:
-  message: "Hello world..."
+  grocy_url: "[PROTO:option_name]://[HOST]"
+  grocy_api_key: ""
+schema:
+  grocy_api_key: password
 schema:
   message: "str?"
 image: "ghcr.io/felixmarschall/thecoolvision-{arch}-addon"

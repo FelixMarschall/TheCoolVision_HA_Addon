@@ -9,7 +9,7 @@ build_from:
 labels:
   org.opencontainers.image.title: "TheCoolVision - Grocy Tablet Interaction"
   org.opencontainers.image.description: "Visualize your Grocy list on a tablet and interact with it."
-  org.opencontainers.image.source: "hhttps://github.com/FelixMarschall/HA_GrocyTablet"
+  org.opencontainers.image.source: "https://github.com/FelixMarschall/HA_GrocyTablet"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
   TEMPIO_VERSION: "2021.09.0"
