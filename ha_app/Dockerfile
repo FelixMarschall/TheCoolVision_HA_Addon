@@ -12,7 +12,7 @@ RUN \
 # So let's set it to our add-on persistent data directory.
 WORKDIR /data
 
-COPY ./thecoolvision/app /data/
+COPY ha_app/thecoolvision/app /data/
 
 RUN \
   pip install --no-cache-dir -r /data/requirements.txt
