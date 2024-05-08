@@ -8,6 +8,7 @@ RUN \
     python3 \
     py3-pip \
     python3-dev \
+    python-opencv \
     build-base \
     cmake
 
@@ -18,7 +19,7 @@ WORKDIR /data
 COPY thecoolvision/app /data/
 
 RUN \
-  pip install --no-cache-dir -r /data/requirements.txt
+  pip install -r /data/requirements.txt
 
 # Start the application
 CMD [ "python3", "main.py"]
