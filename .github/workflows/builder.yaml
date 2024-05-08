@@ -23,7 +23,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4.1.5
         with:
-          submodules: `recursive`
+          submodules: recursive
 
       - name: Get changed files
         id: changed_files
