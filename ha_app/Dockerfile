@@ -20,8 +20,7 @@ WORKDIR /data
 
 COPY thecoolvision/app /data/
 
-RUN \
-  pip install -r /data/requirements.txt
+RUN pip install -r /data/requirements.txt
 
 # Start the application
 CMD [ "python3", "main.py"]

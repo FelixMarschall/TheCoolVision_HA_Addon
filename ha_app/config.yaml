@@ -17,11 +17,9 @@ ports_description:
   5000/tcp: This is the port the web interface will be available on - for the tablet.
 webui: "[PROTO:option_name]://[HOST]:[PORT:5000]"
 options:
-  grocy:
-  - grocy_url: ""
-    grocy_api_key: ""
+  grocy_url: ""
+  grocy_api_key: ""
 schema:
-  grocy:
-  - grocy_url: "str"
-    grocy_api_key: password
+  grocy_url: url
+  grocy_api_key: password
 image: "ghcr.io/felixmarschall/thecoolvision-{arch}-addon"
