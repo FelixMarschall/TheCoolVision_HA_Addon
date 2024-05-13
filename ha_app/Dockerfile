@@ -28,4 +28,5 @@ RUN pwd
 RUN tree
 
 # Start the application
-CMD [ "python3", "main.py"]
+# CMD [ "python3", "main.py"]
+CMD ["/bin/bash"] 
