@@ -23,14 +23,14 @@ RUN apt-get install -y \
     tree \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /data
+WORKDIR /app_data
 
-COPY run.sh /data/
-COPY thecoolvision/app /data/
+COPY run.sh /app_data/
+COPY thecoolvision/app /app_data/
 
-RUN pip install -r /data/requirements.txt
+RUN pip install -r /app_data/requirements.txt
 
 # Start app
 RUN chmod a+x ./run.sh
-# CMD [ "./run.sh" ]
-CMD [ "tree" ]
+CMD [ "./run.sh" ]
+# CMD [ "tree" ]
