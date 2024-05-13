@@ -32,4 +32,5 @@ RUN pip install -r /data/requirements.txt
 
 # Start app
 RUN chmod a+x ./run.sh
-CMD [ "./run.sh" ]
+# CMD [ "./run.sh" ]
+CMD [ "tree" ]
