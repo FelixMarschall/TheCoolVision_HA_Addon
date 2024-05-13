@@ -13,7 +13,8 @@ RUN apt-get install -y \
     libopencv-dev \
     build-essential \
     cmake \
-    libssl-dev
+    libssl-dev \
+    tree
 # Python 3 HTTP Server serves the current working dir
 # So let's set it to our add-on persistent data directory.
 WORKDIR /data
@@ -21,6 +22,10 @@ WORKDIR /data
 COPY thecoolvision/app /data/
 
 RUN pip install -r /data/requirements.txt
+
+RUN pwd
+
+RUN tree
 
 # Start the application
 CMD [ "python3", "main.py"]
