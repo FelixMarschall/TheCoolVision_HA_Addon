@@ -8,10 +8,10 @@ RUN \
     curl -sSLf -o /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
 
-RUN apt-get update && apt-get upgrade -y
-
 # Install requirements for add-on
-RUN apt-get install -y \
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y \
     python3 \
     python3-pip \
     python3-opencv \
@@ -30,7 +30,5 @@ COPY thecoolvision/app /app_data/
 
 RUN pip install -r /app_data/requirements.txt
 
-# Start app
 RUN chmod a+x ./run.sh
 CMD [ "./run.sh" ]
-# CMD [ "tree" ]
