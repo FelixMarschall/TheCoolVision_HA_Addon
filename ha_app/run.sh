@@ -2,4 +2,4 @@ pwd
 
 tree
 
-python3 app/app.py
+python3 main.py
