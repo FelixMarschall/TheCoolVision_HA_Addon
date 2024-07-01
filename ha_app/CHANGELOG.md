@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+
+## 0.0.4
+- readin config (FIX)
 ## 0.0.3
  - update core app
  - integrate openai image detection
