@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.8
+- minor fixes
+- layout optimized for tablet
 
 ## 0.0.7
 - readin config (FIX)
