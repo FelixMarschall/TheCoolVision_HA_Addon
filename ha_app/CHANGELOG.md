@@ -1,5 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+
+## 1.0.0
+- add "Bestand" button
+- fixes
+
 ## 0.0.8
 - minor fixes
 - layout optimized for tablet
