@@ -3,7 +3,7 @@ name: TheCoolVision - Grocy Tablet Interaction
 version: "1.0.0"
 slug: thecoolvision
 description: Visualize your Grocy list on a tablet and interact with it.
-url: "https://github.com/FelixMarschall/HA_GrocyTablet"
+url: "https://github.com/FelixMarschall/TheCoolVision_HA_Addon"
 arch:
   # - armhf
   # - armv7
